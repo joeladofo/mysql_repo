@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Dashboard</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header class="dashboard-header">
+            <h1>To-Do Dashboard</h1>
+            <button class="create-btn">+ Add Task</button>
+        </header>
+
+        <!-- Task Sections -->
+        <section class="tasks-overview">
+            <div class="overview-card">
+                <h2>Overdue Tasks</h2>
+                <ul class="task-list overdue">
+                    <!-- Example Overdue Task -->
+                    <li>
+                        <h4>Pay electricity bill</h4>
+                        <p>Due: 2 days ago</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h2>Today's Tasks</h2>
+                <ul class="task-list today">
+                    <!-- Example Today's Task -->
+                    <li>
+                        <h4>Team meeting</h4>
+                        <p>Due: Today, 3 PM</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="overview-card">
+                <h2>Upcoming Tasks</h2>
+                <ul class="task-list upcoming">
+                    <!-- Example Upcoming Task -->
+                    <li>
+                        <h4>Client presentation</h4>
+                        <p>Due: 2 days from now</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section class="analytics">
+            <h2>Analytics</h2>
+            <div class="stats">
+                <p>Total Tasks: <span id="total-tasks">10</span></p>
+                <p>Completed: <span id="completed-tasks">5</span></p>
+                <p>Pending: <span id="pending-tasks">5</span></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+ 
+

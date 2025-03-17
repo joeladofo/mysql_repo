@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="logo-section">
+            <div class="image-section">
+                <!-- Logo or Image can be added here -->
+            </div>
+        </div>
+        <h1>Create an Account</h1>
+        
+        <!-- Button to toggle the email form -->
+        <button class="btn email-btn">Continue with Email</button>
+
+        <form id="signupForm" action="signup.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit" class="btn submit-btn">Sign Up</button>
+        </form>
+
+        <div class="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">I do not wish to receive news and promotions from Todo list by email.</label>
+        </div>
+
+        <p class="terms">
+            By continuing, you agree to Freepik’s <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+        </p>
+
+        <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+
+    <script>
+        // Script to toggle email form when clicking "Continue with Email"
+        document.querySelector('.email-btn').addEventListener('click', () => {
+            document.getElementById('signupForm').style.display = 'block';
+            document.querySelector('.email-btn').style.display = 'none'; // Hide the button after clicking
+        });
+    </script>
+</body>
+</html>

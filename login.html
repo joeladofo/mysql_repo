@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <!-- Add an image for visual appeal -->
+        </div>
+        <div class="login-section">
+            <h1>Todo List</h1>
+            <h2>Login</h2>
+            <form id="loginForm" action="login.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error-message" id="emailError"></small>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <small class="error-message" id="passwordError"></small>
+
+                <button type="submit" id="loginButton">Login</button>
+                <div class="link">
+                    <p>Don't you have an account? <a href="Signup.html">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="Login.js"></script>
+</body>
+</html>
+
